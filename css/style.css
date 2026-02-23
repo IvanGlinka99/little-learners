@@ -170,7 +170,7 @@ body {
   line-height: 150%;
   font-family: "Outfit", sans-serif;
   color: #000;
-  background: url(../../img/top-banner-desctop.png);
+  background: url(../img/top-banner-desctop.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -188,7 +188,7 @@ body {
 }
 
 .header__button::after {
-  content: url(../../img/icon-right-arrow.png);
+  content: url(../img/icon-right-arrow.png);
   position: relative;
   width: 18px;
   height: 22px;
@@ -293,7 +293,7 @@ body {
 .hero__block-left {
   width: 765px;
   height: 785px;
-  background: url(../../img/hero.png);
+  background: url(../img/hero.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -532,7 +532,7 @@ body {
 }
 
 .reviews__swiper-stars::after {
-  content: url(../../img/5-stars.png);
+  content: url(../img/5-stars.png);
 }
 
 .reviews__swiper-text {
@@ -550,7 +550,7 @@ body {
 
 .reviews__swiper-slide-button-prev::after {
   position: absolute;
-  content: url(../../img/arrow.png);
+  content: url(../img/arrow.png);
   top: 10px;
   left: 15px;
   -webkit-transform: rotate(180deg);
@@ -565,7 +565,7 @@ body {
 
 .reviews__swiper-slide-button-next::after {
   position: absolute;
-  content: url(../../img/arrow.png);
+  content: url(../img/arrow.png);
   bottom: 10px;
   left: 15px;
 }
@@ -660,13 +660,13 @@ body {
   height: 40px;
   border: 2px solid #000;
   border-radius: 8px;
-  background: url(../../img/open.png) center/16px 16px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#fff5f0), to(#fff5f0));
-  background: url(../../img/open.png) center/16px 16px no-repeat, linear-gradient(#fff5f0, #fff5f0);
+  background: url(../img/open.png) center/16px 16px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#fff5f0), to(#fff5f0));
+  background: url(../img/open.png) center/16px 16px no-repeat, linear-gradient(#fff5f0, #fff5f0);
 }
 
 .questions__item-button--open {
-  background: url(../../img/close.png) center/16px 16px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#fff5f0), to(#fff5f0));
-  background: url(../../img/close.png) center/16px 16px no-repeat, linear-gradient(#fff5f0, #fff5f0);
+  background: url(../img/close.png) center/16px 16px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#fff5f0), to(#fff5f0));
+  background: url(../img/close.png) center/16px 16px no-repeat, linear-gradient(#fff5f0, #fff5f0);
 }
 
 .questions__item-content {
@@ -764,7 +764,7 @@ body {
 .navigate__item-span {
   width: 620px;
   height: 20px;
-  background: url(../../img/nav-span.png);
+  background: url(../img/nav-span.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -796,7 +796,7 @@ body {
 }
 
 .navigate__item-button::after {
-  content: url(../../img/arrow.png);
+  content: url(../img/arrow.png);
   margin-left: 14px;
 }
 
@@ -826,8 +826,8 @@ body {
   border-radius: 12px;
   -webkit-box-shadow: 10px 10px 1px #000;
           box-shadow: 10px 10px 1px #000;
-  background: url(../../img/abstract.png) no-repeat 0 0, -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
-  background: url(../../img/abstract.png) no-repeat 0 0, linear-gradient(#fff, #fff);
+  background: url(../img/abstract.png) no-repeat 0 0, -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background: url(../img/abstract.png) no-repeat 0 0, linear-gradient(#fff, #fff);
 }
 
 .overview__block-left {
@@ -1068,8 +1068,8 @@ body {
   border-radius: 12px;
   -webkit-box-shadow: 10px 10px 1px #000;
           box-shadow: 10px 10px 1px #000;
-  background: url(../../img/abstract.png) no-repeat 0 0, -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
-  background: url(../../img/abstract.png) no-repeat 0 0, linear-gradient(#fff, #fff);
+  background: url(../img/abstract.png) no-repeat 0 0, -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background: url(../img/abstract.png) no-repeat 0 0, linear-gradient(#fff, #fff);
 }
 
 .information__block-left {
@@ -1445,13 +1445,13 @@ body {
 .awards__prev::after,
 .awards__next::after {
   position: relative;
-  content: url(../../img/arrow.png);
+  content: url(../img/arrow.png);
   top: -10px;
   left: 0px;
 }
 
 .awards__prev::after {
-  content: url(../../img/arrow-l.png);
+  content: url(../img/arrow-l.png);
 }
 
 .history__wrapper {
@@ -1491,7 +1491,7 @@ body {
   position: absolute;
   top: 150px;
   left: 122px;
-  content: url(../../img/before-verticall-line.png);
+  content: url(../img/before-verticall-line.png);
 }
 
 .history__block-bottom-row {
@@ -1508,7 +1508,7 @@ body {
 .history__block-bottom-row::before {
   position: absolute;
   left: -86px;
-  content: url(../../img/before-line.png);
+  content: url(../img/before-line.png);
 }
 
 .history__block-bottom-col-left {
@@ -1917,11 +1917,11 @@ body {
 }
 
 .gallery__block-bottom-swipper-prev::after {
-  content: url(../../img/arrow-l.png);
+  content: url(../img/arrow-l.png);
 }
 
 .gallery__block-bottom-swipper-next::after {
-  content: url(../../img/arrow.png);
+  content: url(../img/arrow.png);
 }
 
 .gallery__block-bottom-swipper-botton-text {
@@ -1986,7 +1986,7 @@ body {
   width: 20px;
   height: 90px;
   position: absolute;
-  content: url(../../img/after-line.png);
+  content: url(../img/after-line.png);
   bottom: -78px;
   left: 0;
 }
