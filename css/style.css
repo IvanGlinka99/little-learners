@@ -754,7 +754,7 @@ body.lock {
 }
 
 .questions__content--open {
-  max-height: 90px;
+  max-height: 100%;
   padding-top: 24px;
 }
 
