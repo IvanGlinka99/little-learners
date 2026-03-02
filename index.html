@@ -30,209 +30,234 @@
 	<div class="container header__wrapper">
 		<div class="header__block">
 			<a href="#" class="header__button">Admission is Open, Grab your seat now</a>
-			<nav class="header__nav">
-				<div class="header__logo logo">
-					<a href="./index.html" class="header__a">
-						<img src="./img/logo-desctop.png" alt="" class="logo__desctop">
+			<nav class="header__nav" id="nav">
+
+				<div class="header__logo">
+					<a href="./index.html" class="header__logo-link">
+						<img src="./img/logo-desctop.png" alt="" class="header__img">
 					</a>
 				</div>
-				<div class="header__menu menu">
-					<a href="./index.html" class="menu__item">Home</a>
-					<a href="./about.html" class="menu__item">About Us</a>
-					<a href="./academics.html" class="menu__item">Academics</a>
-					<a href="./admissions.html" class="menu__item">Admissions</a>
-					<a href="./life.html" class="menu__item">Student Life</a>
-					<a href="./contact.html" class="menu__item">Contact</a>
-				</div>
+
+				<ul class="header__menu">
+					<li class="header__item">
+						<a class="header__link" href="./index.html">Home</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./about.html">About Us</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./academics.html">Academics</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./admissions.html">Admissions</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./life.html">Student Life</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./contact.html">Contact</a>
+					</li>
+				</ul>
+
+				<button class="header__burger" id="burger">
+					<span class="header__span"></span>
+				</button>
 			</nav>
 		</div>
 	</div>
-</header>`
+</header>
 	<section class="hero" id="hero">
 	<div class="container hero__wrapper">
-		<div class="hero__block">
-			<div class="hero__block-left"></div>
-			<div class="hero__block-right">
-				<div class="hero__block-right-text">
-					<h4 class="hero__block-subtitle">Welcome to Little Learners Academy</h4>
-					<h1 class="hero__block-title">Where Young Minds Blossom and
-						<span class="hero__block-title-color"> Dreams Take Flight.</span>
+		<div class="hero__inner">
+			<div class="hero__image"></div>
+			<div class="hero__content">
+				<div class="hero__block-text">
+					<h4 class="hero__subtitle">Welcome to Little Learners Academy</h4>
+					<h1 class="hero__title">Where Young Minds Blossom and
+						<span class="hero__title-color"> Dreams Take Flight.</span>
 					</h1>
-					<p class="hero__block-text">Our kinder garden school provides a nurturing and stimulating
+					<p class="hero__text">Our kinder garden school provides a nurturing and stimulating
 						environment, fostering
 						a love for learning that lasts a lifetime. Join us as we embark on an exciting educational
 						journey together!
 					</p>
 				</div>
 
-				<div class="hero__block-right-info">
-					<div class="hero__block-num">
-						<span class="hero__block-num-span">+7000</span>
-						<h5 class="hero__block-num-subtitle">Students Passed Out</h5>
+				<div class="hero__stats">
+					<div class="hero__stat">
+						<p class="hero__number">+7000</p>
+						<h5 class="hero__num-subtitle">Students Passed Out</h5>
 					</div>
 
-					<div class="hero__block-num">
-						<span class="hero__block-num-span">+37</span>
-						<h5 class="hero__block-num-subtitle">Awards & Recognitions</h5>
+					<div class="hero__stat">
+						<p class="hero__number">+37</p>
+						<h5 class="hero__num-subtitle">Awards & Recognitions</h5>
 					</div>
 
-					<div class="hero__block-num">
-						<span class="hero__block-num-span">+15</span>
-						<h5 class="hero__block-num-subtitle">Experience Educators</h5>
+					<div class="hero__stat">
+						<p class="hero__number">+15</p>
+						<h5 class="hero__num-subtitle">Experience Educators</h5>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
+</section> 
 	<section class="benefits" id="benefits">
-	<div class="container benefits__wrapper">
-		<div class="benefits__block-top block-top">
-			<p class="benefits__block-button block-button">Children Deserve Bright Future</p>
-			<h2 class="benefits__block-title block-title">Our Benefits</h2>
-			<p class="benefits__block-text block-text">With a dedicated team of experienced educators, state-of-the-art facilities,
-				and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.</p>
+	<div class="container wrapper">
+
+		<div class="block-top benefits__header">
+			<p class="block-top__label">Children Deserve Bright Future</p>
+			<h2 class="block-top__title">Our Benefits</h2>
+			<p class="block-top__text">
+				With a dedicated team of experienced educators, state-of-the-art facilities,
+				and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.
+			</p>
 		</div>
 
-		<div class="benefits__block-bottom">
-			<div class="benefits__block-box">
-				<img src="./img/union.png" alt="" class="benefits__block-img">
-				<h3 class="benefits__block-box-title">Holistic Learning Approach</h3>
-				<p class="benefits__block-box-text">Our curriculum focuses on nurturing cognitive, social, emotional, and
+
+		<div class="benefits__list">
+			<div class="benefits__item">
+				<img src="./img/union.png" alt="" class="benefits__img">
+				<h3 class="benefits__item-title">Holistic Learning Approach</h3>
+				<p class="benefits__item-text">Our curriculum focuses on nurturing cognitive, social, emotional, and
 					physical development, ensuring a well-rounded education.</p>
 			</div>
 
-			<div class="benefits__block-box">
-				<img src="./img/crown.png" alt="" class="benefits__block-img">
-				<h3 class="benefits__block-box-title">Experienced Educators</h3>
-				<p class="benefits__block-box-text">Our passionate and qualified teachers create a supportive and
+			<div class="benefits__item">
+				<img src="./img/crown.png" alt="" class="benefits__img">
+				<h3 class="benefits__item-title">Experienced Educators</h3>
+				<p class="benefits__item-text">Our passionate and qualified teachers create a supportive and
 					stimulating learning environment.
 				</p>
 			</div>
 
-			<div class="benefits__block-box">
-				<img src="./img/mask.png" alt="" class="benefits__block-img">
-				<h3 class="benefits__block-box-title">Nurturing Environment</h3>
-				<p class="benefits__block-box-text">We prioritize safety and provide a warm and caring atmosphere
+			<div class="benefits__item">
+				<img src="./img/mask.png" alt="" class="benefits__img">
+				<h3 class="benefits__item-title">Nurturing Environment</h3>
+				<p class="benefits__item-text">We prioritize safety and provide a warm and caring atmosphere
 					for every child.</p>
 			</div>
 
-			<div class="benefits__block-box">
-				<img src="./img/flag.png" alt="" class="benefits__block-img">
-				<h3 class="benefits__block-box-title">Play-Based Learning</h3>
-				<p class="benefits__block-box-text">We believe in the power of play to foster creativity,
+			<div class="benefits__item">
+				<img src="./img/flag.png" alt="" class="benefits__img">
+				<h3 class="benefits__item-title">Play-Based Learning</h3>
+				<p class="benefits__item-text">We believe in the power of play to foster creativity,
 					problem-solving skills, and imagination.</p>
 			</div>
 
-			<div class="benefits__block-box">
-				<img src="./img/attention.png" alt="" class="benefits__block-img">
-				<h3 class="benefits__block-box-title">Individualized Attention</h3>
-				<p class="benefits__block-box-text">Our small class sizes enable personalized attention, catering to
+			<div class="benefits__item">
+				<img src="./img/attention.png" alt="" class="benefits__img">
+				<h3 class="benefits__item-title">Individualized Attention</h3>
+				<p class="benefits__item-text">Our small class sizes enable personalized attention, catering to
 					each child's unique needs.</p>
 			</div>
 
-			<div class="benefits__block-box">
-				<img src="./img/teams.png" alt="" class="benefits__block-img">
-				<h3 class="benefits__block-box-title">Parent Involvement</h3>
-				<p class="benefits__block-box-text">We foster a strong parent-school partnership to ensure seamless
+			<div class="benefits__item">
+				<img src="./img/teams.png" alt="" class="benefits__img">
+				<h3 class="benefits__item-title">Parent Involvement</h3>
+				<p class="benefits__item-text">We foster a strong parent-school partnership to ensure seamless
 					communication and collaboration.</p>
 			</div>
 		</div>
 	</div>
 </section>
 	<section class="reviews" id="reviews">
-	<div class="container reviews__wrapper">
-		<div class="reviews__block-top block-top">
-			<span class="reviews__block-button block-button">Their Happy Words 🤗</span>
-			<h2 class="reviews__block-title block-title">Our Testimonials</h2>
-			<p class="reviews__block-text block-text">Our testimonials are heartfelt reflections of the nurturing
+	<div class="container wrapper">
+		<div class="block-top reviews__header">
+			<p class="block-top__label">Their Happy Words 🤗</p>
+			<h2 class="block-top__title">Our Testimonials</h2>
+			<p class="block-top__text">
+				Our testimonials are heartfelt reflections of the nurturing
 				environment we
-				provide, where children flourish both academically and emotionally.</p>
+				provide, where children flourish both academically and emotionally.
+			</p>
 		</div>
 
-		<div class="reviews__block-bottom">
+		<div class="reviews__list">
 			<div class="swiper reviews__swiper">
-
-				<div class="swiper-wrapper reviews__swiper-wrapper">
-					<div class="swiper-slide reviews__swiper-slide">
-						<img src="./img/profile-container.png" alt="Photo of Jennifer B" class="reviews__swiper-img">
-						<h3 class="reviews__swiper-title">Jennifer B</h3>
-						<span class="reviews__swiper-stars"></span>
-						<p class="reviews__swiper-text">Little Learners Academy has been a second home for my child. The
+				<div class="swiper-wrapper reviews__wrapper">
+					<div class="swiper-slide reviews__slide">
+						<img src="./img/profile-container.png" alt="Photo of Jennifer B" class="reviews__img">
+						<h3 class="reviews__title">Jennifer B</h3>
+						<span class="reviews__stars"></span>
+						<p class="reviews__text">Little Learners Academy has been a second home for my child. The
 							caring staff and engaging programs have made her excited to go to school every day!</p>
 					</div>
 
-					<div class="swiper-slide reviews__swiper-slide">
-						<img src="./img/profile-container-man.png" alt="Photo of David K" class="reviews__swiper-img">
-						<h3 class="reviews__swiper-title">David K</h3>
-						<span class="reviews__swiper-stars"></span>
-						<p class="reviews__swiper-text">Choosing Little Learners Academy for my daughter was the best
+					<div class="swiper-slide reviews__slide">
+						<img src="./img/profile-container-man.png" alt="Photo of David K" class="reviews__img">
+						<h3 class="reviews__title">David K</h3>
+						<span class="reviews__stars"></span>
+						<p class="reviews__text">Choosing Little Learners Academy for my daughter was the best
 							decision. She has thrived in their nurturing and stimulating environment.</p>
 					</div>
 
-					<div class="swiper-slide reviews__swiper-slide">
-						<img src="./img/profile-container-boy.png" alt="Photo of Emily L" class="reviews__swiper-img">
-						<h3 class="reviews__swiper-title">Emily L</h3>
-						<span class="reviews__swiper-stars"></span>
-						<p class="reviews__swiper-text">My son's social and academic growth has been remarkable since
+					<div class="swiper-slide reviews__slide">
+						<img src="./img/profile-container-boy.png" alt="Photo of Emily L" class="reviews__img">
+						<h3 class="reviews__title">Emily L</h3>
+						<span class="reviews__stars"></span>
+						<p class="reviews__text">My son's social and academic growth has been remarkable since
 							joining Little Learners Academy. I am grateful for the supportive and dedicated teachers.
 						</p>
 					</div>
 
-					<div class="swiper-slide reviews__swiper-slide">
-						<img src="./img/profile-container.png" alt="Photo of Jennifer B" class="reviews__swiper-img">
-						<h3 class="reviews__swiper-title">Jennifer B</h3>
-						<span class="reviews__swiper-stars"></span>
-						<p class="reviews__swiper-text">Little Learners Academy has been a second home for my child. The
+					<div class="swiper-slide reviews__slide">
+						<img src="./img/profile-container.png" alt="Photo of Jennifer B" class="reviews__img">
+						<h3 class="reviews__title">Jennifer B</h3>
+						<span class="reviews__stars"></span>
+						<p class="reviews__text">Little Learners Academy has been a second home for my child. The
 							caring staff and engaging programs have made her excited to go to school every day!</p>
 					</div>
 
-					<div class="swiper-slide reviews__swiper-slide">
-						<img src="./img/profile-container-man.png" alt="Photo of David K" class="reviews__swiper-img">
-						<h3 class="reviews__swiper-title">David K</h3>
-						<span class="reviews__swiper-stars"></span>
-						<p class="reviews__swiper-text">Choosing Little Learners Academy for my daughter was the best
+					<div class="swiper-slide reviews__slide">
+						<img src="./img/profile-container-man.png" alt="Photo of David K" class="reviews__img">
+						<h3 class="reviews__title">David K</h3>
+						<span class="reviews__stars"></span>
+						<p class="reviews__text">Choosing Little Learners Academy for my daughter was the best
 							decision. She has thrived in their nurturing and stimulating environment.</p>
 					</div>
 
-					<div class="swiper-slide reviews__swiper-slide">
-						<img src="./img/profile-container-boy.png" alt="Photo of Emily L" class="reviews__swiper-img">
-						<h3 class="reviews__swiper-title">Emily L</h3>
-						<span class="reviews__swiper-stars"></span>
-						<p class="reviews__swiper-text">My son's social and academic growth has been remarkable since
+					<div class="swiper-slide reviews__slide">
+						<img src="./img/profile-container-boy.png" alt="Photo of Emily L" class="reviews__img">
+						<h3 class="reviews__title">Emily L</h3>
+						<span class="reviews__stars"></span>
+						<p class="reviews__text">My son's social and academic growth has been remarkable since
 							joining Little Learners Academy. I am grateful for the supportive and dedicated teachers.
 						</p>
 					</div>
 				</div>
 
-				<div class="swiper-button-prev reviews__swiper-slide-button-prev"></div>
-				<div class="swiper-button-next reviews__swiper-slide-button-next"></div>
+				<div class="swiper-button-prev reviews__prev"></div>
+				<div class="swiper-button-next reviews__next"></div>
 			</div>
 		</div>
 	</div>
 </section>
 	<section class="questions" id="questions">
-	<div class="container questions__wrapper">
-		<div class="questions__block-top block-top">
-			<span class="questions__block-button block-button">Their Happy Words 🤗</span>
-			<h2 class="questions__block-title block-title">Our Testimonials</h2>
-			<p class="questions__block-text block-text">Our testimonials are heartfelt reflections of the
+	<div class="container wrapper">
+		<div class="block-top questions__top-header">
+			<p class="block-top__label">Their Happy Words 🤗</p>
+			<h2 class="block-top__title">Our Testimonials</h2>
+			<p class="block-top__text">
+				Our testimonials are heartfelt reflections of the
 				nurturing environment we
-				provide, where children flourish both academically and emotionally.</p>
+				provide, where children flourish both academically and emotionally.
+			</p>
 		</div>
 
-		<div class="questions__block-bottom">
+		<div class="questions__list">
 
 			<div class="questions__item">
-				<div class="questions__item-header">
-					<h4 class="questions__item-title">
+				<div class="questions__header">
+					<h4 class="questions__title">
 						What are the school hours at Little Learners Academy?
 					</h4>
-					<span class="questions__item-button"></span>
+					<span class="questions__button"></span>
 				</div>
 
-				<div class="questions__item-content">
-					<p class="questions__item-text">
+				<div class="questions__content">
+					<p class="questions__text">
 						Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options
 						for parents who need early drop-off or late pick-up.
 					</p>
@@ -240,105 +265,105 @@
 			</div>
 
 			<div class="questions__item">
-				<div class="questions__item-header">
-					<h4 class="questions__item-title">
+				<div class="questions__header">
+					<h4 class="questions__title">
 						How do you handle food allergies and dietary restrictions?
 					</h4>
-					<span class="questions__item-button"></span>
+					<span class="questions__button"></span>
 				</div>
 
-				<div class="questions__item-content">
-					<p class="questions__item-text">
+				<div class="questions__content">
+					<p class="questions__text">
 						Yes, we offer early drop-off and late pick-up options...
 					</p>
 				</div>
 			</div>
 
 			<div class="questions__item">
-				<div class="questions__item-header">
-					<h4 class="questions__item-title">
+				<div class="questions__header">
+					<h4 class="questions__title">
 						Is there a uniform policy for students?
 					</h4>
-					<span class="questions__item-button"></span>
+					<span class="questions__button"></span>
 				</div>
 
-				<div class="questions__item-content">
-					<p class="questions__item-text">
+				<div class="questions__content">
+					<p class="questions__text">
 						Yes, we offer early drop-off and late pick-up options...
 					</p>
 				</div>
 			</div>
 
 			<div class="questions__item">
-				<div class="questions__item-header">
-					<h4 class="questions__item-title">
+				<div class="questions__header">
+					<h4 class="questions__title">
 						What is the teacher-to-student ratio at Little Learners Academy?
 					</h4>
-					<span class="questions__item-button"></span>
+					<span class="questions__button"></span>
 				</div>
 
-				<div class="questions__item-content">
-					<p class="questions__item-text">
+				<div class="questions__content">
+					<p class="questions__text">
 						Yes, we offer early drop-off and late pick-up options...
 					</p>
 				</div>
 			</div>
 
 			<div class="questions__item">
-				<div class="questions__item-header">
-					<h4 class="questions__item-title">
+				<div class="questions__header">
+					<h4 class="questions__title">
 						What extracurricular activities are available for students?
 					</h4>
-					<span class="questions__item-button"></span>
+					<span class="questions__button"></span>
 				</div>
 
-				<div class="questions__item-content">
-					<p class="questions__item-text">
+				<div class="questions__content">
+					<p class="questions__text">
 						Yes, we offer early drop-off and late pick-up options...
 					</p>
 				</div>
 			</div>
 
 			<div class="questions__item">
-				<div class="questions__item-header">
-					<h4 class="questions__item-title">
+				<div class="questions__header">
+					<h4 class="questions__title">
 						How do you handle discipline and behavior management?
 					</h4>
-					<span class="questions__item-button"></span>
+					<span class="questions__button"></span>
 				</div>
 
-				<div class="questions__item-content">
-					<p class="questions__item-text">
+				<div class="questions__content">
+					<p class="questions__text">
 						Yes, we offer early drop-off and late pick-up options...
 					</p>
 				</div>
 			</div>
 
 			<div class="questions__item">
-				<div class="questions__item-header">
-					<h4 class="questions__item-title">
+				<div class="questions__header">
+					<h4 class="questions__title">
 						What extracurricular activities are available for students?
 					</h4>
-					<span class="questions__item-button"></span>
+					<span class="questions__button"></span>
 				</div>
 
-				<div class="questions__item-content">
-					<p class="questions__item-text">
+				<div class="questions__content">
+					<p class="questions__text">
 						Yes, we offer early drop-off and late pick-up options...
 					</p>
 				</div>
 			</div>
 
 			<div class="questions__item">
-				<div class="questions__item-header">
-					<h4 class="questions__item-title">
+				<div class="questions__header">
+					<h4 class="questions__title">
 						How do I apply for admission to Little Learners Academy?
 					</h4>
-					<span class="questions__item-button"></span>
+					<span class="questions__button"></span>
 				</div>
 
-				<div class="questions__item-content">
-					<p class="questions__item-text">
+				<div class="questions__content">
+					<p class="questions__text">
 						Yes, we offer early drop-off and late pick-up options...
 					</p>
 				</div>
@@ -348,149 +373,147 @@
 	</div>
 </section>
 	<section class="navigate" id="navigate">
-	<div class="container navigate__wrapper">
-		<div class="navigate__block-top block-top">
-			<p class="navigate__block-button block-button">Explore More</p>
-			<h2 class="navigate__block-title block-title">Navigate through our Pages</h2>
-			<p class="navigate__block-text block-text">Your gateway to discovering a wealth of valuable
+	<div class="container wrapper">
+		<div class="block-top navigate__header">
+			<p class="block-top__label">Explore More</p>
+			<h2 class="block-top__title">Navigate through our Pages</h2>
+			<p class="block-top__text">
+				Your gateway to discovering a wealth of valuable
 				information about our
 				kindergarten school, Feel free to explore and learn more about the enriching experiences that await your
-				child at our kindergarten school</p>
+				child at our kindergarten school
+			</p>
 		</div>
-		<div class="navigate__block-bottom">
 
+		<div class="navigate__list">
 			<div class="navigate__item">
-				<div class="navigate__item-info">
-					<h4 class="navigate__item-title">About Us</h4>
-					<span class="navigate__item-span"></span>
-					<p class="navigate__item-text">Discover our Mission, Values, and our unwavering commitment to providing
+				<div class="navigate__info">
+					<h4 class="navigate__title">About Us</h4>
+
+					<p class="navigate__text">Discover our Mission, Values, and our unwavering commitment to providing
 						the best learning experience for your child. Learn about our passionate educators and our engaging
 						approach to early education.</p>
 				</div>
-				<a href="#" class="navigate__item-button">Learn More</a>
+				<a href="#" class="navigate__button">Learn More</a>
 			</div>
 
 			<div class="navigate__item">
-				<div class="navigate__item-info">
-					<h4 class="navigate__item-title">Academics</h4>
-					<span class="navigate__item-span"></span>
-					<p class="navigate__item-text">Delve into our comprehensive academic programs designed to stimulate young
+				<div class="navigate__info">
+					<h4 class="navigate__title">Academics</h4>
+
+					<p class="navigate__text">Delve into our comprehensive academic programs designed to stimulate young
 						minds, foster creativity, and encourage a love for learning. Explore our well-rounded curriculum that
 						nurtures both intellectual and social development.</p>
 				</div>
-				<a href="#" class="navigate__item-button">Learn More</a>
+				<a href="#" class="navigate__button">Learn More</a>
 			</div>
 
 			<div class="navigate__item">
-				<div class="navigate__item-info">
-					<h4 class="navigate__item-title">Student Life</h4>
-					<span class="navigate__item-span"></span>
-					<p class="navigate__item-text">Peek into the vibrant and enriching world of Student Life at Little
+				<div class="navigate__info">
+					<h4 class="navigate__title">Student Life</h4>
+
+					<p class="navigate__text">Peek into the vibrant and enriching world of Student Life at Little
 						Learners Academy. Discover the array of extracurricular activities, arts and crafts, sports, and
 						social events that make our school experience truly memorable.</p>
 				</div>
-				<a href="#" class="navigate__item-button">Learn More</a>
+				<a href="#" class="navigate__button">Learn More</a>
 			</div>
 
 			<div class="navigate__item">
-				<div class="navigate__item-info">
-					<h4 class="navigate__item-title">Admissions</h4>
-					<span class="navigate__item-span"></span>
-					<p class="navigate__item-text">Learn about our Enrollment Process and how to secure your child's place at
+				<div class="navigate__info">
+					<h4 class="navigate__title">Admissions</h4>
+
+					<p class="navigate__text">Learn about our Enrollment Process and how to secure your child's place at
 						Little Learners Academy. Find information about our admission requirements, application deadlines, and
 						available spaces.</p>
 				</div>
-				<a href="#" class="navigate__item-button">Learn More</a>
+				<a href="#" class="navigate__button">Learn More</a>
 			</div>
-
-
 		</div>
-
 	</div>
 </section>
-
 	<footer class="footer" id="footer">
 	<div class="container footer__wrapper">
 		<div class="footer__head">
 			<div class="footer__head-info">
 
-				<img src="./img/logo-desctop.png" alt="" class="footer__head-info-logo">
+				<img src="./img/logo-desctop.png" alt="" class="footer__head-logo">
 
-				<p class="footer__head-info-text">We believe in the power of play to foster creativity, problem-solving
+				<p class="footer__head-text">We believe in the power of play to foster creativity, problem-solving
 					skills, and imagination.</p>
 
-				<ul class="footer__head-info-list">
-					<li class="footer__head-info-list-item footer__list-mail">
-						<img src="./img/m.png" alt="" class="footer__head-info-list-img">
+				<ul class="footer__head-list">
+					<li class="footer__head-item footer__head-mail">
+						<img src="./img/m.png" alt="" class="footer__head-img">
 						hello@littlelearners.com
 					</li>
-					<li class="footer__head-info-list-item footer__list-number footer__list-mail">
-						<img src="./img/tel.png" alt="" class="footer__head-info-list-img">
+					<li class="footer__head-item footer__head-number footer__head-mail">
+						<img src="./img/tel.png" alt="" class="footer__head-img">
 						+91 91813 23 2309
 					</li>
-					<li class="footer__head-info-list-item footer__list-location footer__list-mail">
-						<img src="./img/loc.png" alt="" class="footer__head-info-list-img">
+					<li class="footer__head-item footer__head-location footer__head-mail">
+						<img src="./img/loc.png" alt="" class="footer__head-img">
 						Somewhere in the World
 					</li>
 				</ul>
 			</div>
 
-			<div class="footer__head-right">
-				<div class="footer__home">
-					<h4 class="footer__home-title">Home</h4>
-					<ul class="footer__home-list">
-						<li class="footer__home-item">
+			<div class="footer__head-link">
+				<div class="footer__col">
+					<h4 class="footer__col-title">Home</h4>
+					<ul class="footer__col-list">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Features</a>
 						</li>
-						<li class="footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Our Testimonials</a>
 						</li>
-						<li class="footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">FAQ</a>
 						</li>
 					</ul>
 				</div>
 
-				<div class="footer__about">
-					<h4 class="footer__about-title footer__home-title">About Us</h4>
-					<ul class="footer__about-list footer__home-list">
-						<li class="footer__about-item footer__home-item">
+				<div class="footer__col">
+					<h4 class="footer__col-title">About Us</h4>
+					<ul class="footer__col-list">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Our Mission</a>
 						</li>
-						<li class="footer__about-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Our Vission</a>
 						</li>
-						<li class="footer__about-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Awards and Recognitions</a>
 						</li>
-						<li class="footer__about-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">History</a>
 						</li>
-						<li class="footer__about-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Teachers</a>
 						</li>
 					</ul>
 				</div>
 
-				<div class="footer__academic">
-					<h4 class="footer__academic-title footer__home-title">Academics</h4>
-					<ul class="footer__academic-list footer__home-list">
-						<li class="footer__academic-item footer__home-item">
+				<div class="footer__col">
+					<h4 class="footer__col-title">Academics</h4>
+					<ul class="footer__col-list">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Special Features</a>
 						</li>
-						<li class="footer__academic-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Gallery</a>
 						</li>
 					</ul>
 				</div>
 
-				<div class="footer__contact">
-					<h4 class="footer__contact-title footer__home-title">Contact Us</h4>
-					<ul class="footer__contact-list footer__home-list">
-						<li class="footer__contact-item footer__home-item">
+				<div class="footer__col">
+					<h4 class="footer__col-title">Contact Us</h4>
+					<ul class="footer__col-list">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Information</a>
 						</li>
-						<li class="footer__contact-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Map & Direction</a>
 						</li>
 					</ul>
@@ -501,38 +524,35 @@
 
 		</div>
 
-		<div class="footer__bottom">
-			<div class="footer__link">
-				<ul class="footer__link-left">
-					<li class="footer__link-left-item">
-						<a href="#" class="footer__link-left-link">Terms of Service</a>
+		<div class="footer__body">
+			<ul class="footer__policy">
+				<li class="footer__policy-item">
+					<a href="#" class="footer__policy-link">Terms of Service</a>
 
-					</li>
-					<li class="footer__link-left-item">
-						<a href="#" class="footer__link-left-link"> Privacy Policy</a>
-					</li>
-					<li class="footer__link-left-item">
-						<a href="#" class="footer__link-left-link"> Cookie Policy</a>
-					</li>
-				</ul>
+				</li>
+				<li class="footer__policy-item">
+					<a href="#" class="footer__policy-link"> Privacy Policy</a>
+				</li>
+				<li class="footer__policy-item">
+					<a href="#" class="footer__policy-link"> Cookie Policy</a>
+				</li>
+			</ul>
 
-				<ul class="footer__link-right">
-					<li class="footer__link-right-item">
-						<a href="#" class="footer__link-a"><img src="./img/f.png" alt=""
-								class="footer__link-right-img"></a>
-					</li>
-					<li class="footer__link-right-item">
-						<a href="#" class="footer__link-a"><img src="./img/t.png" alt=""
-								class="footer__link-right-img"></a>
-					</li>
-					<li class="footer__link-right-item">
-						<a href="#" class="footer__link-a"><img src="./img/in.png" alt=""
-								class="footer__link-right-img"></a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__bottom-text">Copyright © [2023] Little Learners Academy. All rights reserved.</div>
+			<ul class="footer__social">
+				<li class="footer__social-item">
+					<a href="#" class="footer__social-link"><img src="./img/f.png" alt="" class="footer__social-img"></a>
+				</li>
+				<li class="footer__social-item">
+					<a href="#" class="footer__social-link"><img src="./img/t.png" alt="" class="footer__social-img"></a>
+				</li>
+				<li class="footer__social-item">
+					<a href="#" class="footer__social-link"><img src="./img/in.png" alt="" class="footer__social-img"></a>
+				</li>
+			</ul>
 		</div>
+		<p class="footer__copyright">
+			Copyright © [2023] Little Learners Academy. All rights reserved.
+		</p>
 	</div>
 </footer>
 

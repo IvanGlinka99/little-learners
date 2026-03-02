@@ -1,32 +1,57 @@
+function burgerMenu() {
+  const burger = document.querySelector(".header__burger");
+  const menu = document.querySelector(".header__menu");
+  const body = document.body;
+
+  if (!burger || !menu) return;
+
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("active-burger");
+    menu.classList.toggle("active-menu");
+    body.classList.toggle("lock");
+  });
+
+  menu.addEventListener("click", (e) => {
+    const link = e.target.closest(".header__menu-link");
+    if (!link) return;
+
+    burger.classList.remove("active-burger");
+    menu.classList.remove("active-menu");
+    body.classList.remove("lock");
+  });
+}
+
+document.addEventListener("DOMContentLoaded", burgerMenu);
+
 function accordion() {
   const items = document.querySelectorAll(".questions__item");
 
   items.forEach((item) => {
-    const button = item.querySelector(".questions__item-button");
-    const itemTitle = item.querySelector(".questions__item-title");
-    const content = item.querySelector(".questions__item-content");
+    const button = item.querySelector(".questions__button");
+    const itemTitle = item.querySelector(".questions__title");
+    const content = item.querySelector(".questions__content");
 
     item.addEventListener("click", () => {
       const isOpen = item.classList.contains("questions__item--open");
 
       items.forEach((el) => {
         el.classList.remove("questions__item--open");
-        el.querySelector(".questions__item-button").classList.remove(
-          "questions__item-button--open",
+        el.querySelector(".questions__button").classList.remove(
+          "questions__button--open",
         );
-        el.querySelector(".questions__item-title").classList.remove(
-          "questions__item-title--open",
+        el.querySelector(".questions__title").classList.remove(
+          "questions__title--open",
         );
-        el.querySelector(".questions__item-content").classList.remove(
-          "questions__item-content--open",
+        el.querySelector(".questions__content").classList.remove(
+          "questions__content--open",
         );
       });
 
       if (!isOpen) {
         item.classList.add("questions__item--open");
-        button.classList.add("questions__item-button--open");
-        itemTitle.classList.add("questions__item-title--open");
-        content.classList.add("questions__item-content--open");
+        button.classList.add("questions__button--open");
+        itemTitle.classList.add("questions__title--open");
+        content.classList.add("questions__content--open");
       }
     });
   });
@@ -34,25 +59,59 @@ function accordion() {
 
 accordion();
 ;
-const swiper = new Swiper(".reviews__swiper", {
+const reviewsSwiper = new Swiper(".reviews__swiper", {
   loop: true,
-  slidesPerView: 3,
-  spaceBetween: 50,
   speed: 500,
+
+  slidesPerView: 1,
+  spaceBetween: 30,
+
   navigation: {
-    prevEl: ".swiper-button-prev",
-    nextEl: ".swiper-button-next",
+    prevEl: ".reviews__prev",
+    nextEl: ".reviews__next",
+  },
+
+  breakpoints: {
+    1920: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
   },
 });
-
 const newSwiper = new Swiper(".awards__swiper", {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 40,
   speed: 500,
   navigation: {
     prevEl: ".awards__prev",
     nextEl: ".awards__next",
+  },
+  breakpoints: {
+    1920: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
   },
 });
 
@@ -78,17 +137,40 @@ buttons.forEach((btn) => {
 
 const classroomSwiper = new Swiper(".swiper-classroom", {
   loop: true,
-  slidesPerView: 4,
-  spaceBetween: 40,
+  slidesPerView: 1,
+  spaceBetween: 30,
   speed: 500,
   navigation: {
     prevEl: ".swiper-classroom-prev",
     nextEl: ".swiper-classroom-next",
   },
+  breakpoints: {
+    1920: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    375: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
 });
+
 const librarySwiper = new Swiper(".swiper-library", {
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 40,
   speed: 500,
   navigation: {
@@ -98,7 +180,7 @@ const librarySwiper = new Swiper(".swiper-library", {
 });
 const scienceSwiper = new Swiper(".swiper-science", {
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 40,
   speed: 500,
   navigation: {
@@ -108,7 +190,7 @@ const scienceSwiper = new Swiper(".swiper-science", {
 });
 const computerSwiper = new Swiper(".swiper-computer", {
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 40,
   speed: 500,
   navigation: {
@@ -118,7 +200,7 @@ const computerSwiper = new Swiper(".swiper-computer", {
 });
 const areaSwiper = new Swiper(".swiper-area", {
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 40,
   speed: 500,
   navigation: {

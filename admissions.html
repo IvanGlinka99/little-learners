@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Admissions</title>
+	<title>Little learnes</title>
 	<!-- normalize -->
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
 	<!-- fontawesome -->
@@ -30,33 +30,51 @@
 	<div class="container header__wrapper">
 		<div class="header__block">
 			<a href="#" class="header__button">Admission is Open, Grab your seat now</a>
-			<nav class="header__nav">
-				<div class="header__logo logo">
-					<a href="./index.html" class="header__a">
-						<img src="./img/logo-desctop.png" alt="" class="logo__desctop">
+			<nav class="header__nav" id="nav">
+
+				<div class="header__logo">
+					<a href="./index.html" class="header__logo-link">
+						<img src="./img/logo-desctop.png" alt="" class="header__img">
 					</a>
 				</div>
-				<div class="header__menu menu">
-					<a href="./index.html" class="menu__item">Home</a>
-					<a href="./about.html" class="menu__item">About Us</a>
-					<a href="./academics.html" class="menu__item">Academics</a>
-					<a href="./admissions.html" class="menu__item">Admissions</a>
-					<a href="./life.html" class="menu__item">Student Life</a>
-					<a href="./contact.html" class="menu__item">Contact</a>
-				</div>
+
+				<ul class="header__menu">
+					<li class="header__item">
+						<a class="header__link" href="./index.html">Home</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./about.html">About Us</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./academics.html">Academics</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./admissions.html">Admissions</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./life.html">Student Life</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./contact.html">Contact</a>
+					</li>
+				</ul>
+
+				<button class="header__burger" id="burger">
+					<span class="header__span"></span>
+				</button>
 			</nav>
 		</div>
 	</div>
-</header>`
+</header>
 	<section class="overview" id="overview-admission">
 	<div class="container overview__wrapper">
 		<div class="overview__block">
 			<div class="overview__block-left">
-				<p class="overview__block-left-button block-button">Admission</p>
-				<h2 class="overview__block-left-title block-title">Join Our Family of Young Learners</h2>
+				<p class="overview__block-left-button block-top__label">Admission</p>
+				<h2 class="overview__block-left-title block-top__title">Join Our Family of Young Learners</h2>
 			</div>
 			<div class="overview__block-right">
-				<p class="overview__block-right-text block-text">
+				<p class="overview__block-right-text block-top__text">
 					At Little Learners Academy, we welcome you to embark on an exciting educational journey for your child.
 					Our admission process is designed to be transparent, straightforward, and inclusive. Here's a
 					step-by-step guide to joining our school
@@ -65,73 +83,75 @@
 		</div>
 	</div>
 </section>
-
 	<section class="admission" id="admission">
-	<div class="container admission__wrapper">
-		<div class="admission__block-top block-top">
-			<p class="admission__block-button block-button">Process</p>
-			<h2 class="admission__block-title block-title">Admission Process</h2>
-			<p class="admission__block-text block-text">Embark on a remarkable educational journey with us! Our Admission
+	<div class="container wrapper">
+
+		<div class="block-top admission__header">
+			<p class="block-top__label">Process</p>
+			<h2 class="block-top__title">Admission Process</h2>
+			<p class="block-top__text">
+				Embark on a remarkable educational journey with us! Our Admission
 				and Enrollment process is the gateway to providing your child with an exceptional learning experience at our
-				kindergarten school</p>
+				kindergarten school
+			</p>
 		</div>
 
-		<div class="admission__block-bottom">
-			<div class="admission__block-box">
-				<div class="admission__block-box-num">01</div>
-				<div class="admission__block-box-info">
-					<h4 class="admission__block-box-title">Inquiry</h4>
-					<p class="admission__block-box-text">Submit an inquiry form through our website or contact our admissions
+		<div class="admission__list">
+			<div class="admission__item">
+				<div class="admission__item-num">01</div>
+				<div class="admission__item-info">
+					<h4 class="admission__item-title">Inquiry</h4>
+					<p class="admission__item-text">Submit an inquiry form through our website or contact our admissions
 						office to express your interest in Little Learners Academy.
 					</p>
 				</div>
 			</div>
 
-			<div class="admission__block-box">
-				<div class="admission__block-box-num">02</div>
-				<div class="admission__block-box-info">
-					<h4 class="admission__block-box-title">School Tour</h4>
-					<p class="admission__block-box-text">Schedule a personalized school tour to explore our campus, meet our
+			<div class="admission__item">
+				<div class="admission__item-num">02</div>
+				<div class="admission__item-info">
+					<h4 class="admission__item-title">School Tour</h4>
+					<p class="admission__item-text">Schedule a personalized school tour to explore our campus, meet our
 						staff, and gain insights into our nurturing learning environment.
 					</p>
 				</div>
 			</div>
 
-			<div class="admission__block-box">
-				<div class="admission__block-box-num">03</div>
-				<div class="admission__block-box-info">
-					<h4 class="admission__block-box-title">Application Form</h4>
-					<p class="admission__block-box-text">Complete the application form and provide the required documents,
+			<div class="admission__item">
+				<div class="admission__item-num">03</div>
+				<div class="admission__item-info">
+					<h4 class="admission__item-title">Application Form</h4>
+					<p class="admission__item-text">Complete the application form and provide the required documents,
 						including your child's birth certificate, medical records, and any previous academic records (if
 						applicable).</p>
 				</div>
 			</div>
 
-			<div class="admission__block-box">
-				<div class="admission__block-box-num">04</div>
-				<div class="admission__block-box-info">
-					<h4 class="admission__block-box-title">Parent Interview</h4>
-					<p class="admission__block-box-text">We value parent engagement, and a meeting with our admissions team
+			<div class="admission__item">
+				<div class="admission__item-num">04</div>
+				<div class="admission__item-info">
+					<h4 class="admission__item-title">Parent Interview</h4>
+					<p class="admission__item-text">We value parent engagement, and a meeting with our admissions team
 						allows us to understand your child's needs and ensure Little Learners Academy aligns with your
 						family's expectations.</p>
 				</div>
 			</div>
 
-			<div class="admission__block-box">
-				<div class="admission__block-box-num">05</div>
-				<div class="admission__block-box-info">
-					<h4 class="admission__block-box-title">Student Assessment</h4>
-					<p class="admission__block-box-text">For certain age groups, a student assessment may be conducted to
+			<div class="admission__item">
+				<div class="admission__item-num">05</div>
+				<div class="admission__item-info">
+					<h4 class="admission__item-title">Student Assessment</h4>
+					<p class="admission__item-text">For certain age groups, a student assessment may be conducted to
 						understand their developmental progress and ensure the best placement.
 					</p>
 				</div>
 			</div>
 
-			<div class="admission__block-box">
-				<div class="admission__block-box-num">06</div>
-				<div class="admission__block-box-info">
-					<h4 class="admission__block-box-title">Acceptance</h4>
-					<p class="admission__block-box-text">Once the admission process is complete, you will receive an official
+			<div class="admission__item">
+				<div class="admission__item-num">06</div>
+				<div class="admission__item-info">
+					<h4 class="admission__item-title">Acceptance</h4>
+					<p class="admission__item-text">Once the admission process is complete, you will receive an official
 						acceptance letter from Little Learners Academy.
 					</p>
 				</div>
@@ -141,73 +161,79 @@
 	</div>
 </section>
 	<section class="table" id="table">
-	<div class="container table__wrapper">
-		<div class="table__block-top block-top">
-			<p class="table__block-button block-button">Our Features</p>
-			<h2 class="table__block-title block-title">Fee Structure</h2>
-			<p class="table__block-text block-text">Our fee structure is transparent, and we strive to keep our fees
+	<div class="container wrapper">
+		<div class="block-top __header">
+			<p class="block-top__label">Our Features</p>
+			<h2 class="block-top__title">Fee Structure</h2>
+			<p class="block-top__text">
+				Our fee structure is transparent, and we strive to keep our fees
 				competitive within the education sector. The fees vary based on the program, age group, and any additional
-				services chosen.</p>
+				services chosen.
+			</p>
 		</div>
 
-		<div class="table__block-bottom">
-			<div class="table__box">
-				<div class="table__box-thead">
-					<div class="table__box-body-row-tr">
-						<div class="table__box-head-col table__box-head">Program</div>
-						<div class="table__box-head-col table__box-head">Age Group</div>
-						<div class="table__box-head-col table__box-head">Annual Tuition</div>
-						<div class="table__box-head-col table__box-head">Registration Fee</div>
-						<div class="table__box-head-col table__box-head">Activity Fee</div>
+		<div class="table__list">
+			<div class="table__collapse">
+				<div class="table__box">
+					<div class="table__box-thead">
+						<div class="table__box-body-row-tr">
+							<div class="table__box-head-col table__box-head">Program</div>
+							<div class="table__box-head-col table__box-head">Age Group</div>
+							<div class="table__box-head-col table__box-head">Annual Tuition</div>
+							<div class="table__box-head-col table__box-head">Registration Fee</div>
+							<div class="table__box-head-col table__box-head">Activity Fee</div>
+						</div>
 					</div>
-				</div>
 
-				<div class="table__box-tbody">
-					<div class="table__box-body-row">
-						<div class="table__box-body-col table__box-body">Nursery</div>
-						<div class="table__box-body-col table__box-body">2 - 3 Years</div>
-						<div class="table__box-body-col table__box-body">$1,686</div>
-						<div class="table__box-body-col table__box-body">$162</div>
-						<div class="table__box-body-col table__box-body">$12</div>
-					</div>
-					<div class="table__box-body-row">
-						<div class="table__box-body-col table__box-body">Pre - Kindergartens</div>
-						<div class="table__box-body-col table__box-body">3 - 4 Years</div>
-						<div class="table__box-body-col table__box-body">$2,686</div>
-						<div class="table__box-body-col table__box-body">$220</div>
-						<div class="table__box-body-col table__box-body">$16</div>
-					</div>
-					<div class="table__box-body-row">
-						<div class="table__box-body-col table__box-body">Kindergarten</div>
-						<div class="table__box-body-col table__box-body">4 - 5 Years</div>
-						<div class="table__box-body-col table__box-body">$3,686</div>
-						<div class="table__box-body-col table__box-body">$340</div>
-						<div class="table__box-body-col table__box-body">$20</div>
+					<div class="table__box-tbody">
+						<div class="table__box-body-row">
+							<div class="table__box-body-col table__box-body">Nursery</div>
+							<div class="table__box-body-col table__box-body">2 - 3 Years</div>
+							<div class="table__box-body-col table__box-body">$1,686</div>
+							<div class="table__box-body-col table__box-body">$162</div>
+							<div class="table__box-body-col table__box-body">$12</div>
+						</div>
+						<div class="table__box-body-row">
+							<div class="table__box-body-col table__box-body">Pre - Kindergartens</div>
+							<div class="table__box-body-col table__box-body">3 - 4 Years</div>
+							<div class="table__box-body-col table__box-body">$2,686</div>
+							<div class="table__box-body-col table__box-body">$220</div>
+							<div class="table__box-body-col table__box-body">$16</div>
+						</div>
+						<div class="table__box-body-row">
+							<div class="table__box-body-col table__box-body">Kindergarten</div>
+							<div class="table__box-body-col table__box-body">4 - 5 Years</div>
+							<div class="table__box-body-col table__box-body">$3,686</div>
+							<div class="table__box-body-col table__box-body">$340</div>
+							<div class="table__box-body-col table__box-body">$20</div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="table__box">
-				<div class="table__box-thead">
-					<div class="table__box-body-row-tr">
-						<div class="table__box-head-col table__head-col" colspan="2">
-							Additional Services
+			<div class="table__collapse">
+				<div class="table__box">
+					<div class="table__box-thead">
+						<div class="table__box-body-row-tr">
+							<div class="table__box-head-col table__head-col" colspan="2">
+								Additional Services
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="table__box-tbody">
-					<div class="table__box-body-row">
-						<div class="table__box-body-col table__body-col">Before and After-School Care</div>
-						<div class="table__box-body-col table__body-col">$120 / per month</div>
-					</div>
-					<div class="table__box-body-row">
-						<div class="table__box-body-col table__body-col">Language Immersion Program</div>
-						<div class="table__box-body-col table__body-col">$60 / per semester</div>
-					</div>
-					<div class="table__box-body-row">
-						<div class="table__box-body-col table__body-col">Transportation (optional)</div>
-						<div class="table__box-body-col table__body-col">$80 / per month</div>
+					<div class="table__box-tbody">
+						<div class="table__box-body-row">
+							<div class="table__box-body-col table__body-col">Before and After-School Care</div>
+							<div class="table__box-body-col table__body-col">$120 / per month</div>
+						</div>
+						<div class="table__box-body-row">
+							<div class="table__box-body-col table__body-col">Language Immersion Program</div>
+							<div class="table__box-body-col table__body-col">$60 / per semester</div>
+						</div>
+						<div class="table__box-body-row">
+							<div class="table__box-body-col table__body-col">Transportation (optional)</div>
+							<div class="table__box-body-col table__body-col">$80 / per month</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -219,83 +245,83 @@
 		<div class="footer__head">
 			<div class="footer__head-info">
 
-				<img src="./img/logo-desctop.png" alt="" class="footer__head-info-logo">
+				<img src="./img/logo-desctop.png" alt="" class="footer__head-logo">
 
-				<p class="footer__head-info-text">We believe in the power of play to foster creativity, problem-solving
+				<p class="footer__head-text">We believe in the power of play to foster creativity, problem-solving
 					skills, and imagination.</p>
 
-				<ul class="footer__head-info-list">
-					<li class="footer__head-info-list-item footer__list-mail">
-						<img src="./img/m.png" alt="" class="footer__head-info-list-img">
+				<ul class="footer__head-list">
+					<li class="footer__head-item footer__head-mail">
+						<img src="./img/m.png" alt="" class="footer__head-img">
 						hello@littlelearners.com
 					</li>
-					<li class="footer__head-info-list-item footer__list-number footer__list-mail">
-						<img src="./img/tel.png" alt="" class="footer__head-info-list-img">
+					<li class="footer__head-item footer__head-number footer__head-mail">
+						<img src="./img/tel.png" alt="" class="footer__head-img">
 						+91 91813 23 2309
 					</li>
-					<li class="footer__head-info-list-item footer__list-location footer__list-mail">
-						<img src="./img/loc.png" alt="" class="footer__head-info-list-img">
+					<li class="footer__head-item footer__head-location footer__head-mail">
+						<img src="./img/loc.png" alt="" class="footer__head-img">
 						Somewhere in the World
 					</li>
 				</ul>
 			</div>
 
-			<div class="footer__head-right">
-				<div class="footer__home">
-					<h4 class="footer__home-title">Home</h4>
-					<ul class="footer__home-list">
-						<li class="footer__home-item">
+			<div class="footer__head-link">
+				<div class="footer__col">
+					<h4 class="footer__col-title">Home</h4>
+					<ul class="footer__col-list">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Features</a>
 						</li>
-						<li class="footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Our Testimonials</a>
 						</li>
-						<li class="footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">FAQ</a>
 						</li>
 					</ul>
 				</div>
 
-				<div class="footer__about">
-					<h4 class="footer__about-title footer__home-title">About Us</h4>
-					<ul class="footer__about-list footer__home-list">
-						<li class="footer__about-item footer__home-item">
+				<div class="footer__col">
+					<h4 class="footer__col-title">About Us</h4>
+					<ul class="footer__col-list">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Our Mission</a>
 						</li>
-						<li class="footer__about-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Our Vission</a>
 						</li>
-						<li class="footer__about-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Awards and Recognitions</a>
 						</li>
-						<li class="footer__about-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">History</a>
 						</li>
-						<li class="footer__about-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Teachers</a>
 						</li>
 					</ul>
 				</div>
 
-				<div class="footer__academic">
-					<h4 class="footer__academic-title footer__home-title">Academics</h4>
-					<ul class="footer__academic-list footer__home-list">
-						<li class="footer__academic-item footer__home-item">
+				<div class="footer__col">
+					<h4 class="footer__col-title">Academics</h4>
+					<ul class="footer__col-list">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Special Features</a>
 						</li>
-						<li class="footer__academic-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Gallery</a>
 						</li>
 					</ul>
 				</div>
 
-				<div class="footer__contact">
-					<h4 class="footer__contact-title footer__home-title">Contact Us</h4>
-					<ul class="footer__contact-list footer__home-list">
-						<li class="footer__contact-item footer__home-item">
+				<div class="footer__col">
+					<h4 class="footer__col-title">Contact Us</h4>
+					<ul class="footer__col-list">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Information</a>
 						</li>
-						<li class="footer__contact-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Map & Direction</a>
 						</li>
 					</ul>
@@ -306,38 +332,35 @@
 
 		</div>
 
-		<div class="footer__bottom">
-			<div class="footer__link">
-				<ul class="footer__link-left">
-					<li class="footer__link-left-item">
-						<a href="#" class="footer__link-left-link">Terms of Service</a>
+		<div class="footer__body">
+			<ul class="footer__policy">
+				<li class="footer__policy-item">
+					<a href="#" class="footer__policy-link">Terms of Service</a>
 
-					</li>
-					<li class="footer__link-left-item">
-						<a href="#" class="footer__link-left-link"> Privacy Policy</a>
-					</li>
-					<li class="footer__link-left-item">
-						<a href="#" class="footer__link-left-link"> Cookie Policy</a>
-					</li>
-				</ul>
+				</li>
+				<li class="footer__policy-item">
+					<a href="#" class="footer__policy-link"> Privacy Policy</a>
+				</li>
+				<li class="footer__policy-item">
+					<a href="#" class="footer__policy-link"> Cookie Policy</a>
+				</li>
+			</ul>
 
-				<ul class="footer__link-right">
-					<li class="footer__link-right-item">
-						<a href="#" class="footer__link-a"><img src="./img/f.png" alt=""
-								class="footer__link-right-img"></a>
-					</li>
-					<li class="footer__link-right-item">
-						<a href="#" class="footer__link-a"><img src="./img/t.png" alt=""
-								class="footer__link-right-img"></a>
-					</li>
-					<li class="footer__link-right-item">
-						<a href="#" class="footer__link-a"><img src="./img/in.png" alt=""
-								class="footer__link-right-img"></a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__bottom-text">Copyright © [2023] Little Learners Academy. All rights reserved.</div>
+			<ul class="footer__social">
+				<li class="footer__social-item">
+					<a href="#" class="footer__social-link"><img src="./img/f.png" alt="" class="footer__social-img"></a>
+				</li>
+				<li class="footer__social-item">
+					<a href="#" class="footer__social-link"><img src="./img/t.png" alt="" class="footer__social-img"></a>
+				</li>
+				<li class="footer__social-item">
+					<a href="#" class="footer__social-link"><img src="./img/in.png" alt="" class="footer__social-img"></a>
+				</li>
+			</ul>
 		</div>
+		<p class="footer__copyright">
+			Copyright © [2023] Little Learners Academy. All rights reserved.
+		</p>
 	</div>
 </footer>
 

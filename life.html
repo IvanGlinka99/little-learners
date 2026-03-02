@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Student Life</title>
+	<title>Little learnes</title>
 	<!-- normalize -->
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
 	<!-- fontawesome -->
@@ -30,33 +30,51 @@
 	<div class="container header__wrapper">
 		<div class="header__block">
 			<a href="#" class="header__button">Admission is Open, Grab your seat now</a>
-			<nav class="header__nav">
-				<div class="header__logo logo">
-					<a href="./index.html" class="header__a">
-						<img src="./img/logo-desctop.png" alt="" class="logo__desctop">
+			<nav class="header__nav" id="nav">
+
+				<div class="header__logo">
+					<a href="./index.html" class="header__logo-link">
+						<img src="./img/logo-desctop.png" alt="" class="header__img">
 					</a>
 				</div>
-				<div class="header__menu menu">
-					<a href="./index.html" class="menu__item">Home</a>
-					<a href="./about.html" class="menu__item">About Us</a>
-					<a href="./academics.html" class="menu__item">Academics</a>
-					<a href="./admissions.html" class="menu__item">Admissions</a>
-					<a href="./life.html" class="menu__item">Student Life</a>
-					<a href="./contact.html" class="menu__item">Contact</a>
-				</div>
+
+				<ul class="header__menu">
+					<li class="header__item">
+						<a class="header__link" href="./index.html">Home</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./about.html">About Us</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./academics.html">Academics</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./admissions.html">Admissions</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./life.html">Student Life</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="./contact.html">Contact</a>
+					</li>
+				</ul>
+
+				<button class="header__burger" id="burger">
+					<span class="header__span"></span>
+				</button>
 			</nav>
 		</div>
 	</div>
-</header>`
+</header>
 	<section class="overview" id="overview-life">
 	<div class="container overview__wrapper">
 		<div class="overview__block">
 			<div class="overview__block-left">
-				<p class="overview__block-left-button block-button">Enriching Student Life</p>
-				<h2 class="overview__block-left-title block-title">Embracing Learning with Discovery and Joy</h2>
+				<p class="overview__block-left-button block-top__label">Enriching Student Life</p>
+				<h2 class="overview__block-left-title block-top__title">Embracing Learning with Discovery and Joy</h2>
 			</div>
 			<div class="overview__block-right">
-				<p class="overview__block-right-text block-text">
+				<p class="overview__block-right-text block-top__text">
 					Welcome to our Student Life page, where the magic of childhood comes alive through the enriching
 					experiences and adventures that our students embark on each day. At our kindergarten school, we believe
 					that learning goes beyond textbooks, and we strive to create a holistic and engaging environment that
@@ -66,134 +84,150 @@
 		</div>
 	</div>
 </section>
-
- 
 	<section class="activities" id="activities">
-	<div class="container activities__wrapper">
-		<div class="activities__block-top block-top">
-			<p class="activities__block-button block-button">Our Features</p>
-			<h2 class="activities__block-title block-title">Extracurricular Activities</h2>
-			<p class="activities__block-text block-text">At Little Learners Academy, we believe in nurturing
-				well-rounded individuals. Our extracurricular activities offer a diverse range of experiences that
-				complement our academic curriculum and encourage students to explore their interests and passions. We offer
-				a wide array of extracurricular activities, including</p>
+	<div class="container">
+
+		<div class="block-top activities__header">
+			<p class="block-top__label">Our Features</p>
+			<h2 class="block-top__title">Extracurricular Activities</h2>
+			<p class="block-top__text">
+				At Little Learners Academy, we believe in nurturing well-rounded individuals.
+				Our extracurricular activities offer a diverse range of experiences that
+				complement our academic curriculum and encourage students to explore their interests and passions.
+			</p>
 		</div>
 
-		<div class="activities__block-bottom">
-			<div class="activities__block-box">
-				<img src="./img/lightning.png" alt="" class="activities__block-img">
-				<h3 class="activities__block-box-title">Sports and Athletics</h3>
-				<p class="activities__block-box-text">Students can participate in various sports, from soccer and basketball
-					to gymnastics and yoga. Sports help promote teamwork, physical fitness, and a sense of discipline.</p>
+
+		<div class="activities__list">
+
+			<div class="card">
+				<img src="./img/lightning.png" alt="" class="card__icon">
+				<h3 class="card__title">Sports and Athletics</h3>
+				<p class="card__text">
+					Students can participate in various sports, from soccer and basketball
+					to gymnastics and yoga.
+				</p>
 			</div>
 
-			<div class="activities__block-box">
-				<img src="./img/brush.png" alt="" class="activities__block-img">
-				<h3 class="activities__block-box-title">Art and Creativity</h3>
-				<p class="activities__block-box-text">Our art classes and creative workshops provide a platform for students
-					to express their creativity through painting, drawing, and other artistic forms.</p>
+			<div class="card">
+				<img src="./img/brush.png" alt="" class="card__icon">
+				<h3 class="card__title">Art and Creativity</h3>
+				<p class="card__text">
+					Our art classes and creative workshops provide a platform for students
+					to express their creativity.
+				</p>
 			</div>
 
-			<div class="activities__block-box">
-				<img src="./img/music.png" alt="" class="activities__block-img">
-				<h3 class="activities__block-box-title">Music and Performing Arts</h3>
-				<p class="activities__block-box-text">Students can discover their musical talents through singing, playing
-					musical instruments, and participating in drama and theater performances.</p>
+			<div class="card">
+				<img src="./img/music.png" alt="" class="card__icon">
+				<h3 class="card__title">Music and Performing Arts</h3>
+				<p class="card__text">
+					Students can discover their musical talents through singing and drama.
+				</p>
 			</div>
 
-			<div class="activities__block-box">
-				<img src="./img/puzzle.png" alt="" class="activities__block-img">
-				<h3 class="activities__block-box-title">Language Clubs</h3>
-				<p class="activities__block-box-text">Language clubs offer an opportunity for students to immerse themselves
-					in different languages and cultures, fostering global awareness.</p>
+			<div class="card">
+				<img src="./img/puzzle.png" alt="" class="card__icon">
+				<h3 class="card__title">Language Clubs</h3>
+				<p class="card__text">
+					Language clubs foster global awareness and cultural immersion.
+				</p>
 			</div>
 
-			<div class="activities__block-box">
-				<img src="./img/chemistry.png" alt="" class="activities__block-img">
-				<h3 class="activities__block-box-title">Science Club</h3>
-				<p class="activities__block-box-text">The science club allows young scientists to explore the wonders of
-					science through fun experiments and hands-on learning.</p>
+			<div class="card">
+				<img src="./img/chemistry.png" alt="" class="card__icon">
+				<h3 class="card__title">Science Club</h3>
+				<p class="card__text">
+					The science club allows young scientists to explore fun experiments.
+				</p>
 			</div>
 
-			<div class="activities__block-box">
-				<img src="./img/stars.png" alt="" class="activities__block-img">
-				<h3 class="activities__block-box-title">Cooking and Culinary Arts</h3>
-				<p class="activities__block-box-text">Cooking classes introduce students to the joys of preparing and
-					tasting delicious and healthy meals.</p>
+			<div class="card">
+				<img src="./img/stars.png" alt="" class="card__icon">
+				<h3 class="card__title">Cooking and Culinary Arts</h3>
+				<p class="card__text">
+					Cooking classes introduce students to preparing healthy meals.
+				</p>
 			</div>
+
 		</div>
 	</div>
 </section>
 	<section class="events" id="events">
-	<div class="container events__wrapper">
-		<div class="events__block-top block-top">
-			<p class="events__block-button block-button">Our Features</p>
-			<h2 class="events__block-title block-title">Events & Celebrations</h2>
-			<p class="events__block-text block-text">At Little Learners Academy, we celebrate every milestone and
+	<div class="container wrapper">
+
+		<div class="block-top events__header">
+			<p class="block-top__label">Our Features</p>
+			<h2 class="block-top__title events__block-top-title">Events & Celebrations</h2>
+			<p class="block-top__text">
+				At Little Learners Academy, we celebrate every milestone and
 				create cherished memories for our students. Throughout the year, we host a variety of events and
-				celebrations that bring the entire school community together. Some of our memorable events include</p>
+				celebrations that bring the entire school community together. Some of our memorable events include
+			</p>
 		</div>
 
-		<div class="events__block-bottom">
-			<div class="events__block-box">
-				<span class="events__block-box-image"></span>
-				<img src="./img/sport.png" alt="" class="events__block-img">
-				<div class="events__block-box-info">
-					<h3 class="events__block-box-title">Annual Sports Day</h3>
-					<p class="events__block-box-text">A day filled with friendly competition, team spirit, and
+
+
+		<div class="events__list">
+			<div class="events__item">
+				<span class="events__item-image"></span>
+				<img src="./img/sport.png" alt="" class="events__img">
+				<div class="events__item-info">
+					<h3 class="events__item-title">Annual Sports Day</h3>
+					<p class="events__item-text">A day filled with friendly competition, team spirit, and
 						sportsmanship.
 					</p>
 				</div>
 			</div>
 
-			<div class="events__block-box">
-				<span class="events__block-box-image-n"></span>
-				<img src="./img/festivals.png" alt="" class="events__block-img">
-				<div class="events__block-box-info">
-					<h3 class="events__block-box-title">Cultural Festivals</h3>
-					<p class="events__block-box-text">Celebrations of diverse cultural festivals, promoting cultural exchange
+			<div class="events__item">
+				<span class="events__item-image-n"></span>
+				<img src="./img/festivals.png" alt="" class="events__img">
+				<div class="events__item-info">
+					<h3 class="events__item-title">Cultural Festivals</h3>
+					<p class="events__item-text">Celebrations of diverse cultural festivals, promoting cultural exchange
 						and appreciation.</p>
 				</div>
 			</div>
 
-			<div class="events__block-box">
-				<span class="events__block-box-image"></span>
-				<img src="./img/art.png" alt="" class="events__block-img">
-				<div class="events__block-box-info">
-					<h3 class="events__block-box-title">Art Exhibitions</h3>
-					<p class="events__block-box-text">Showcasing our students' artistic talents through exhibitions and
+			<div class="events__item">
+				<span class="events__item-image"></span>
+				<img src="./img/art.png" alt="" class="events__img">
+				<div class="events__item-info">
+					<h3 class="events__item-title">Art Exhibitions</h3>
+					<p class="events__item-text">Showcasing our students' artistic talents through exhibitions and
 						displays.</p>
 				</div>
 			</div>
 
-			<div class="events__block-box">
-				<span class="events__block-box-image"></span>
-				<img src="./img/science.png" alt="" class="events__block-img">
-				<div class="events__block-box-info">
-					<h3 class="events__block-box-title">Science Fair</h3>
-					<p class="events__block-box-text">A platform for budding scientists to present their innovative
+			<div class="events__item">
+				<span class="events__item-image"></span>
+				<img src="./img/science.png" alt="" class="events__img">
+				<div class="events__item-info">
+					<h3 class="events__item-title">Science Fair</h3>
+					<p class="events__item-text">A platform for budding scientists to present their innovative
 						projects and
 						experiments.</p>
 				</div>
 			</div>
 
-			<div class="events__block-box">
-				<span class="events__block-box-image-n"></span>
-				<img src="./img/international.png" alt="" class="events__block-img">
-				<div class="events__block-box-info">
-					<h3 class="events__block-box-title">International Day</h3>
-					<p class="events__block-box-text">A vibrant celebration of our diverse community, embracing
+			<div class="events__item">
+				<span class="events__item-image-n"></span>
+				<img src="./img/international.png" alt="" class="events__img">
+				<div class="events__item-info">
+					<h3 class="events__item-title">International Day</h3>
+					<p class="events__item-text">A vibrant celebration of our diverse community, embracing
 						cultures from
 						around the world.</p>
 				</div>
 			</div>
 
-			<div class="events__block-box">
-				<span class="events__block-box-image"></span>
-				<img src="./img/ceremony.png" alt="" class="events__block-img">
-				<div class="events__block-box-info">
-					<h3 class="events__block-box-title">Graduation Ceremony</h3>
-					<p class="events__block-box-text">A significant milestone as our Kindergarten students
+			<div class="events__item">
+				<span class="events__item-image"></span>
+				<img src="./img/ceremony.png" alt="" class="events__img">
+				<div class="events__item-info">
+					<h3 class="events__item-title">Graduation Ceremony</h3>
+					<p class="events__item-text">A significant milestone as our Kindergarten students
 						prepare to embark on
 						their academic journey.</p>
 				</div>
@@ -201,35 +235,43 @@
 		</div>
 </section>
 	<section class="support" id="support">
-	<div class="container activities__wrapper">
-		<div class="activities__block-top block-top">
-			<p class="activities__block-button block-button">Our Achievements</p>
-			<h2 class="activities__block-title block-title">Student Support</h2>
-			<p class="activities__block-text block-text">At Little Learners Academy, we are committed to providing
+	<div class="container wrapper">
+		<div class="block-top __header">
+			<p class="block-top__label">Our Achievements</p>
+			<h2 class="block-top__title">Student Support</h2>
+			<p class="block-top__text">
+				At Little Learners Academy, we are committed to providing
 				a supportive and nurturing environment that meets the unique needs of each student. Our student support
-				services include</p>
+				services include.
+			</p>
 		</div>
 
-		<div class="activities__block-bottom">
-			<div class="activities__block-box">
-				<img src="./img/bulb.png" alt="" class="activities__block-img">
-				<h3 class="activities__block-box-title">Counseling</h3>
-				<p class="activities__block-box-text">Professional counselors offer guidance and support to students,
-					addressing their emotional and social well-being.</p>
+		<div class="activities__list">
+			<div class="card">
+				<img src="./img/bulb.png" alt="" class="card__icon">
+				<h3 class="card__title">Counseling</h3>
+				<p class="card__text">
+					Professional counselors offer guidance and support to students,
+					addressing their emotional and social well-being.
+				</p>
 			</div>
 
-			<div class="activities__block-box">
-				<img src="./img/support.png" alt="" class="activities__block-img">
-				<h3 class="activities__block-box-title">Learning Support</h3>
-				<p class="activities__block-box-text">Our educators provide additional assistance to students who may
-					require extra support in their academic journey.</p>
+			<div class="card">
+				<img src="./img/support.png" alt="" class="card__icon">
+				<h3 class="card__title">Learning Support</h3>
+				<p class="card__text">
+					Our educators provide additional assistance to students who may
+					require extra support in their academic journey.
+				</p>
 			</div>
 
-			<div class="activities__block-box">
-				<img src="./img/team.png" alt="" class="activities__block-img">
-				<h3 class="activities__block-box-title">Parent-Teacher Collaboration</h3>
-				<p class="activities__block-box-text">We foster a strong partnership with parents to ensure seamless
-					communication and mutual support in a child's development.</p>
+			<div class="card">
+				<img src="./img/team.png" alt="" class="card__icon">
+				<h3 class="card__title">Parent-Teacher Collaboration</h3>
+				<p class="card__text">
+					We foster a strong partnership with parents to ensure seamless
+					communication and mutual support in a child's development.
+				</p>
 			</div>
 		</div>
 	</div>
@@ -239,83 +281,83 @@
 		<div class="footer__head">
 			<div class="footer__head-info">
 
-				<img src="./img/logo-desctop.png" alt="" class="footer__head-info-logo">
+				<img src="./img/logo-desctop.png" alt="" class="footer__head-logo">
 
-				<p class="footer__head-info-text">We believe in the power of play to foster creativity, problem-solving
+				<p class="footer__head-text">We believe in the power of play to foster creativity, problem-solving
 					skills, and imagination.</p>
 
-				<ul class="footer__head-info-list">
-					<li class="footer__head-info-list-item footer__list-mail">
-						<img src="./img/m.png" alt="" class="footer__head-info-list-img">
+				<ul class="footer__head-list">
+					<li class="footer__head-item footer__head-mail">
+						<img src="./img/m.png" alt="" class="footer__head-img">
 						hello@littlelearners.com
 					</li>
-					<li class="footer__head-info-list-item footer__list-number footer__list-mail">
-						<img src="./img/tel.png" alt="" class="footer__head-info-list-img">
+					<li class="footer__head-item footer__head-number footer__head-mail">
+						<img src="./img/tel.png" alt="" class="footer__head-img">
 						+91 91813 23 2309
 					</li>
-					<li class="footer__head-info-list-item footer__list-location footer__list-mail">
-						<img src="./img/loc.png" alt="" class="footer__head-info-list-img">
+					<li class="footer__head-item footer__head-location footer__head-mail">
+						<img src="./img/loc.png" alt="" class="footer__head-img">
 						Somewhere in the World
 					</li>
 				</ul>
 			</div>
 
-			<div class="footer__head-right">
-				<div class="footer__home">
-					<h4 class="footer__home-title">Home</h4>
-					<ul class="footer__home-list">
-						<li class="footer__home-item">
+			<div class="footer__head-link">
+				<div class="footer__col">
+					<h4 class="footer__col-title">Home</h4>
+					<ul class="footer__col-list">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Features</a>
 						</li>
-						<li class="footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Our Testimonials</a>
 						</li>
-						<li class="footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">FAQ</a>
 						</li>
 					</ul>
 				</div>
 
-				<div class="footer__about">
-					<h4 class="footer__about-title footer__home-title">About Us</h4>
-					<ul class="footer__about-list footer__home-list">
-						<li class="footer__about-item footer__home-item">
+				<div class="footer__col">
+					<h4 class="footer__col-title">About Us</h4>
+					<ul class="footer__col-list">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Our Mission</a>
 						</li>
-						<li class="footer__about-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Our Vission</a>
 						</li>
-						<li class="footer__about-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Awards and Recognitions</a>
 						</li>
-						<li class="footer__about-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">History</a>
 						</li>
-						<li class="footer__about-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Teachers</a>
 						</li>
 					</ul>
 				</div>
 
-				<div class="footer__academic">
-					<h4 class="footer__academic-title footer__home-title">Academics</h4>
-					<ul class="footer__academic-list footer__home-list">
-						<li class="footer__academic-item footer__home-item">
+				<div class="footer__col">
+					<h4 class="footer__col-title">Academics</h4>
+					<ul class="footer__col-list">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Special Features</a>
 						</li>
-						<li class="footer__academic-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Gallery</a>
 						</li>
 					</ul>
 				</div>
 
-				<div class="footer__contact">
-					<h4 class="footer__contact-title footer__home-title">Contact Us</h4>
-					<ul class="footer__contact-list footer__home-list">
-						<li class="footer__contact-item footer__home-item">
+				<div class="footer__col">
+					<h4 class="footer__col-title">Contact Us</h4>
+					<ul class="footer__col-list">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Information</a>
 						</li>
-						<li class="footer__contact-item footer__home-item">
+						<li class="footer__col-item">
 							<a href="#" class="footer__contact-link">Map & Direction</a>
 						</li>
 					</ul>
@@ -326,38 +368,35 @@
 
 		</div>
 
-		<div class="footer__bottom">
-			<div class="footer__link">
-				<ul class="footer__link-left">
-					<li class="footer__link-left-item">
-						<a href="#" class="footer__link-left-link">Terms of Service</a>
+		<div class="footer__body">
+			<ul class="footer__policy">
+				<li class="footer__policy-item">
+					<a href="#" class="footer__policy-link">Terms of Service</a>
 
-					</li>
-					<li class="footer__link-left-item">
-						<a href="#" class="footer__link-left-link"> Privacy Policy</a>
-					</li>
-					<li class="footer__link-left-item">
-						<a href="#" class="footer__link-left-link"> Cookie Policy</a>
-					</li>
-				</ul>
+				</li>
+				<li class="footer__policy-item">
+					<a href="#" class="footer__policy-link"> Privacy Policy</a>
+				</li>
+				<li class="footer__policy-item">
+					<a href="#" class="footer__policy-link"> Cookie Policy</a>
+				</li>
+			</ul>
 
-				<ul class="footer__link-right">
-					<li class="footer__link-right-item">
-						<a href="#" class="footer__link-a"><img src="./img/f.png" alt=""
-								class="footer__link-right-img"></a>
-					</li>
-					<li class="footer__link-right-item">
-						<a href="#" class="footer__link-a"><img src="./img/t.png" alt=""
-								class="footer__link-right-img"></a>
-					</li>
-					<li class="footer__link-right-item">
-						<a href="#" class="footer__link-a"><img src="./img/in.png" alt=""
-								class="footer__link-right-img"></a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__bottom-text">Copyright © [2023] Little Learners Academy. All rights reserved.</div>
+			<ul class="footer__social">
+				<li class="footer__social-item">
+					<a href="#" class="footer__social-link"><img src="./img/f.png" alt="" class="footer__social-img"></a>
+				</li>
+				<li class="footer__social-item">
+					<a href="#" class="footer__social-link"><img src="./img/t.png" alt="" class="footer__social-img"></a>
+				</li>
+				<li class="footer__social-item">
+					<a href="#" class="footer__social-link"><img src="./img/in.png" alt="" class="footer__social-img"></a>
+				</li>
+			</ul>
 		</div>
+		<p class="footer__copyright">
+			Copyright © [2023] Little Learners Academy. All rights reserved.
+		</p>
 	</div>
 </footer>
 
